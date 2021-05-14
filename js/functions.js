@@ -1,7 +1,7 @@
 const EDAD_MINIMA = 18;
 
 // Declaramos una funcion podria definir repeat=1 como valor default
-function checkAge(repeat) {
+function checkAge(repeat=1) {
     if( repeat == undefined) {
         console.error("Parametro no definido");
     }
@@ -23,3 +23,47 @@ function checkAge(repeat) {
     }
 
 }
+
+
+/**
+ * calculateForce F = m.a -> Calcular de fuerza en distintos tipos de unidades.
+ * @param {*} m 
+ * @param {*} a 
+ * @param {*} unit 
+ * @returns 
+ */
+function calculateForce( m, a, unit) {
+    let f = 0;
+    switch (unit) {
+        case 'Newtons':
+            f = m * a;
+            break;
+        
+        case 'other unit':
+            
+            break;
+        default:
+            break;
+    }
+
+    return f;
+}
+
+// function para convertir unidades de temperatura
+// Kelvin, celcius, fahrenheit
+function convertTemp(from, to){
+    //
+}
+
+/**
+ * Pow is a funciont multiples x by y times
+ * @param { Number } x 
+ * @param { Number} y 
+ * @returns { Number }
+ */
+function pow(x,y) {
+    return x ** y;
+}
+
+let myPow = (x, y) => x ** y;
+

@@ -8,9 +8,13 @@ const PI = 3.141592653589793; // Tambien se podria Maht.PI
 
 // Llamo 10 veces una funcion
 //for (let i = 0; i < 10; i++) {
-checkAge(); //  <- Check age hace todo...
+checkAge(1); //  <- Check age hace todo...
 //}
+console.log(Math.pow(2,6))
+console.log(pow(2,6))
 
+
+console.log(myPow(2,6));
 
 let myInputNumber = parseInt(prompt("Ingrese un Numero"));
 
