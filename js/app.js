@@ -8,11 +8,12 @@ const PI = 3.141592653589793; // Tambien se podria Maht.PI
 
 // Llamo 10 veces una funcion
 //for (let i = 0; i < 10; i++) {
-checkAge(1); //  <- Check age hace todo...
+checkAge(1, alert); //  <- Check age hace todo...
 //}
 console.log(Math.pow(2,6))
 console.log(pow(2,6))
 
+let myValue = pow(2,6) // pow return un valor que es 2 elevado a la 6
 
 console.log(myPow(2,6));
 

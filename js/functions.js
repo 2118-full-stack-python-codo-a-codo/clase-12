@@ -1,7 +1,7 @@
 const EDAD_MINIMA = 18;
 
 // Declaramos una funcion podria definir repeat=1 como valor default
-function checkAge(repeat=1) {
+function checkAge(repeat=1, myCallback = null) {
     if( repeat == undefined) {
         console.error("Parametro no definido");
     }
@@ -18,10 +18,15 @@ function checkAge(repeat=1) {
             alert("Sos Menor, no podes ingresar");
             document.location = "../index.html"; // Te vas al index.html
         } else {
-            alert("Bienvenido!");
+            //alert("Bienvenido!");
+            // Si es mayor de edad Y tengo definido un callback... se llama
+            if( myCallback != null){
+                myCallback("Bienvenido Usuario");
+            }
         }
     }
 
+    
 }
 
 
@@ -62,7 +67,8 @@ function convertTemp(from, to){
  * @returns { Number }
  */
 function pow(x,y) {
-    return x ** y;
+    let value = x ** y; // primero operadores
+    return value; // luego retorno el valor
 }
 
 let myPow = (x, y) => x ** y;
