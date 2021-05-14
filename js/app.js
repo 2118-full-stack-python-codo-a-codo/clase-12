@@ -1,25 +1,16 @@
 console.log("Paso por contact form");
 
-// Por ahora todo tipo de dato ingresa por prompt
-let myEdad = parseInt(prompt("Que edad tenes?"));
-
 // Cual es la diferencia entre let var y const?
 // entre let y var en 1 mismo archivo no hay diferencia.
 // const es constante una vez definido no se puede cambiar.
 
 const PI = 3.141592653589793; // Tambien se podria Maht.PI
 
-const EDAD_MINIMA = 18;
+// Llamo 10 veces una funcion
+//for (let i = 0; i < 10; i++) {
+checkAge(); //  <- Check age hace todo...
+//}
 
-let tieneEdadMinima = (myEdad >= EDAD_MINIMA); // Uso el operador > para comparar numeros
-//let myValorFalse = false;
-
-if (!tieneEdadMinima) { // if ( condition ) si la condicion es verdadera pasa sino no.
-    alert("Sos Menor, no podes ingresar");
-    document.location = "../index.html"; // Te vas al index.html
-} else {
-    alert("Bienvenido!");
-}
 
 let myInputNumber = parseInt(prompt("Ingrese un Numero"));
 
@@ -52,7 +43,7 @@ let myMonthInput = parseInt(prompt("Ingrese el mes usando numeros del 1 al 12"))
 // Es muy bueno para recorrer elementos o listas
 //for (let index = 0; index < array.length; index++) {
 //    const element = array[index];
-  
+
 //}
 
 
@@ -82,5 +73,8 @@ do {
             alert("N/A");
             break;
     }
-} while ( (myMonthInput!=12) ) // Como hago para combinar estos meses??  (myMonthInput!=1) (myMonthInput!=2));
+
+    //let myMonthInput = parseInt(prompt("Ingrese el mes usando numeros del 1 al 12"));
+   
+} while ((myMonthInput != 12)) // Como hago para combinar estos meses??  (myMonthInput!=1) (myMonthInput!=2));
 
